@@ -64,7 +64,7 @@ const Filter = ({ propertyData, setFilteredPropertyData, setPropertyData }) => {
       return;
     }
 
-    fetch(`http://localhost:8000/search?query=${searchQuery}`)
+    fetch(`https://stay-backend.onrender.com/search?query=${searchQuery}`)
       .then((response) => response.json())
       .then((data) => {
         setFilteredPropertyData(data);

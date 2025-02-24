@@ -15,7 +15,7 @@ const Profile = () => {
   const wishlist = useSelector((state) => state.wishlist?.wishlistData);
 
   useEffect(() => {
-    fetch(`http://localhost:8000/profile/${userId}`)
+    fetch(`https://stay-backend.onrender.com/profile/${userId}`)
       .then((response) => response.json())
       .then((data) => setPropertyData(data.list))
       .catch((error) => {
@@ -73,7 +73,7 @@ const Profile = () => {
           )}
           {activeBtn === 0 &&
             propertyData.map((item) => {
-              const fullImageUrl = `http://localhost:8000/${item?.images[0]?.replace(
+              const fullImageUrl = `https://stay-backend.onrender.com/${item?.images[0]?.replace(
                 /\\/g,
                 "/"
               )}`;
@@ -121,7 +121,7 @@ const Profile = () => {
               </p>
               {wishlist
                 ? wishlist.map((item) => {
-                    const fullImageUrl = `http://localhost:8000/${item.images[0].replace(
+                    const fullImageUrl = `https://stay-backend.onrender.com/${item.images[0].replace(
                       /\\/,
                       "/"
                     )}`;

@@ -22,7 +22,7 @@ function App() {
 
       try {
         const response = await fetch(
-          `http://localhost:8000/wishlist/${user?.id}`
+          `https://stay-backend.onrender.com/wishlist/${user?.id}`
         );
         if (!response.ok) {
           throw new Error(

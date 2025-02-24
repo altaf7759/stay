@@ -67,7 +67,7 @@ const Properties = ({ title }) => {
 
   useEffect(() => {
     if (!query) {
-      fetch("http://localhost:8000/properties-list")
+      fetch("https://stay-backend.onrender.com/properties-list")
         .then((response) => {
           return response.json();
         })
@@ -77,7 +77,7 @@ const Properties = ({ title }) => {
         });
     }
     if (query) {
-      fetch(`http://localhost:8000/search?query=${query}`)
+      fetch(`https://stay-backend.onrender.com/search?query=${query}`)
         .then((response) => response.json())
         .then((data) => {
           setPropertyData(data);
@@ -121,7 +121,7 @@ const Properties = ({ title }) => {
             </div>
           </div>
           {filteredPropertyData.map((item) => {
-            const fullImageUrl = `http://localhost:8000/${item.images[0].replace(
+            const fullImageUrl = `https://stay-backend.onrender.com/${item.images[0].replace(
               /\\/g,
               "/"
             )}`;

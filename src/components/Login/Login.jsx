@@ -13,7 +13,7 @@ const Login = () => {
   const handleLoginSuccess = (credentialResponse) => {
     const token = credentialResponse.credential;
 
-    fetch("http://localhost:8000/login", {
+    fetch("https://stay-backend.onrender.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

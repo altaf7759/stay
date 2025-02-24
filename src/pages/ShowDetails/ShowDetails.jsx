@@ -56,7 +56,9 @@ function ShowDetails() {
   useEffect(() => {
     const fetchPropertyDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:8000/property/${id}`);
+        const response = await fetch(
+          `https://stay-backend.onrender.com/property/${id}`
+        );
         if (!response.ok) {
           throw new Error("Failed to fetch property details");
         }
@@ -81,7 +83,7 @@ function ShowDetails() {
       if (isFavorite) {
         // Logic for removing from wishlist (if implemented)
         const response = await fetch(
-          `http://localhost:8000/wishlist/remove/${user?.id}/${id}`,
+          `https://stay-backend.onrender.com/wishlist/remove/${user?.id}/${id}`,
           {
             method: "DELETE",
           }
@@ -97,7 +99,7 @@ function ShowDetails() {
       } else {
         // Logic for adding to wishlist
         const response = await fetch(
-          `http://localhost:8000/wishlist/add/${user?.id}/${id}`,
+          `https://stay-backend.onrender.com/wishlist/add/${user?.id}/${id}`,
           {
             method: "POST",
           }
@@ -130,13 +132,19 @@ function ShowDetails() {
 
   const firstImage =
     propertyDetails.images && propertyDetails.images.length > 0
-      ? `http://localhost:8000/${propertyDetails.images[0].replace(/\\/g, "/")}`
+      ? `https://stay-backend.onrender.com/${propertyDetails.images[0].replace(
+          /\\/g,
+          "/"
+        )}`
       : null;
 
   const allImages =
     propertyDetails.images && propertyDetails.images.length > 0 ? (
       propertyDetails.images.map((img, key) => {
-        const fullImageUrl = `http://localhost:8000/${img.replace(/\\/g, "/")}`;
+        const fullImageUrl = `https://stay-backend.onrender.com/${img.replace(
+          /\\/g,
+          "/"
+        )}`;
         return (
           <img
             src={fullImageUrl}
@@ -159,7 +167,7 @@ function ShowDetails() {
     propertyDetails.video.length > 0 &&
     typeof propertyDetails.video[0] === "string" ? (
       <video
-        src={`http://localhost:8000/${propertyDetails.video[0].replace(
+        src={`https://stay-backend.onrender.com/${propertyDetails.video[0].replace(
           /\\/g,
           "/"
         )}`}
@@ -168,7 +176,7 @@ function ShowDetails() {
         }}
         className={
           bigImg ===
-          `http://localhost:8000/${propertyDetails.video[0].replace(
+          `https://stay-backend.onrender.com/${propertyDetails.video[0].replace(
             /\\/g,
             "/"
           )}`
@@ -191,7 +199,7 @@ function ShowDetails() {
             <div className="fullImg">
               {firstImage ? (
                 bigImg ===
-                `http://localhost:8000/${propertyDetails.video[0].replace(
+                `https://stay-backend.onrender.com/${propertyDetails.video[0].replace(
                   /\\/g,
                   "/"
                 )}` ? (

@@ -151,7 +151,7 @@ const ListProperties = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:8000/list-your-properties",
+        "https://stay-backend.onrender.com/list-your-properties",
         {
           method: "POST",
           body: formData,
