@@ -70,6 +70,7 @@ const Login = () => {
             <GoogleLogin
               onSuccess={handleLoginSuccess}
               onError={handleLoginError}
+              redirectUri="https://stay-frontend.vercel.app"
             />
           </div>
         </div>
