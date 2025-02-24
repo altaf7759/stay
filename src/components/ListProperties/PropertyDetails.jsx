@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
-import ShowBtns from "./showBtns";
+import ShowBtns from "./ShowBtns";
 import { useDispatch, useSelector } from "react-redux";
 import { setPropertyDetails } from "../../faetures/PropertyForm/PropertySlice";
 import { setStep } from "../../faetures/PropertyForm/stepSlice";
