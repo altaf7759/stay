@@ -1,5 +1,5 @@
 import React from "react";
-import ShowBtns from "./showBtns";
+import ShowBtns from "./ShowBtns";
 import { useSelector } from "react-redux";
 
 function FormPreview() {

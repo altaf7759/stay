@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-import ShowBtns from "./showBtns";
+import ShowBtns from "./ShowBtns";
 import { useSelector, useDispatch } from "react-redux";
 import { setRentAndBilling } from "../../faetures/PropertyForm/PropertySlice";
 import { setStep } from "../../faetures/PropertyForm/stepSlice";

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import ShowBtns from "./showBtns";
+import ShowBtns from "./ShowBtns";
 import { setRulesAndRestrictions } from "../../faetures/PropertyForm/PropertySlice";
 import { useDispatch, useSelector } from "react-redux";
 import { setStep } from "../../faetures/PropertyForm/stepSlice";
