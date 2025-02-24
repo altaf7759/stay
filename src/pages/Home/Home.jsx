@@ -4,6 +4,7 @@ import "./Home.css";
 import UserIcon1 from "../../assets/user1.jpg";
 import UserIcon2 from "../../assets/user2.jpg";
 
+// components
 import Navbar from "../../components/Navbar/Navbar";
 import Search from "../../components/Search/Search";
 import Footer from "../../components/Footer/Footer";
