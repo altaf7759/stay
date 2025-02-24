@@ -1,0 +1,232 @@
+.all-items {
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  font-family: "poppins", sans-serif;
+}
+
+.top .btn {
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 0px 5px lightgray;
+  border-radius: 5px;
+  padding-right: 10px;
+}
+
+.top button {
+  padding: 10px 5px 10px 10px;
+  border: none;
+  background-color: white;
+}
+
+.top .icon {
+  font-size: 12px;
+}
+
+.sort {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  box-shadow: 0px 0px 5px lightgray;
+  padding: 20px 25px;
+  color: #252c41;
+  font-size: 14px;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 100;
+}
+
+.sort ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sort ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.sort ul li:hover {
+  color: royalblue;
+}
+
+.items {
+  width: 100%;
+  box-shadow: 0px 0px 5px lightgray;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "poppins", sans-serif;
+  margin-top: 20px;
+}
+
+.items .item-img {
+  width: 100%;
+  position: relative;
+  flex-basis: 35%;
+  cursor: pointer;
+  display: flex;
+  height: 100%;
+}
+
+.item-img img {
+  width: 100%;
+  border-radius: 5px 0px 0px 5px;
+  height: 230px;
+}
+
+.rating {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  background-color: #252c41b9;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 0px 0px lightgray;
+  align-items: center;
+}
+
+.img-label {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 11px;
+  background-color: rgba(255, 255, 255, 0.813);
+  padding: 3px 10px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px darkgray;
+}
+
+.item-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 20px;
+  color: #252c41;
+  position: relative;
+  flex-basis: 65%;
+}
+
+.favorite {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  font-size: 20px;
+}
+
+.item-title h3 {
+  font-size: 17px;
+  font-weight: 600;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+}
+
+.item-title h3:hover {
+  color: royalblue;
+  cursor: pointer;
+}
+
+.desc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.desc .includedBills,
+.desc .item-verify {
+  flex-basis: 48%;
+}
+
+.sortInfo {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  gap: 15px;
+}
+
+.desc .includedBills {
+  flex-basis: 100%;
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.desc .includedBills .billsList {
+  display: flex;
+  gap: 10px;
+}
+
+.desc .includedBills .billsList p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.desc .includedBills .billsLabel {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.desc .includedBills span .billsLabelIcon {
+  font-size: 16px;
+}
+
+.item-gender,
+.item-type,
+.item-verify,
+.item-city {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  cursor: context-menu;
+}
+
+.item-verify {
+  color: green;
+}
+
+.payment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  border-top: 1px solid darkgray;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.pricing span {
+  color: gray;
+  margin-right: 15px;
+  font-size: 13px;
+}
+
+.bill-inc {
+  font-size: 12px;
+}
+
+.more-info {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  cursor: pointer;
+}
+.more-info p {
+  color: royalblue;
+}

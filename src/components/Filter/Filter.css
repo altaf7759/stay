@@ -1,0 +1,202 @@
+.filters-box {
+  box-shadow: 0px 0px 5px lightgray;
+  width: 350px;
+  font-family: "poppins", sans-serif;
+  padding: 30px;
+  color: #252c41;
+  border-radius: 5px;
+  margin-top: 80px;
+  height: 580px;
+  overflow-y: scroll;
+  position: sticky;
+  top: 130px;
+  left: 10%;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.suggestions-section ul {
+  position: relative;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #252c41;
+}
+
+.label label {
+  font-size: 15px;
+}
+
+.select-type-input,
+.select-gender-input {
+  position: relative;
+}
+
+.select-type-input select,
+.select-gender-input select {
+  font-size: 13px;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 10px 10px 35px;
+  margin-top: 10px;
+  font-family: "poppins", sans-serif;
+  width: 100%;
+}
+
+.select-type-input .home-icon,
+.select-gender-input .gender-icon {
+  position: absolute;
+  top: 45%;
+  left: 10px;
+  border-right: 1px solid gray;
+  padding-right: 5px;
+  color: gray;
+}
+
+.gender {
+  margin-top: 20px;
+}
+
+.price-range {
+  margin-top: 20px;
+}
+
+.price-range ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.price-range ul li {
+  list-style: none;
+  font-size: 12px;
+  padding: 10px;
+  background-color: rgb(246, 246, 246);
+  border-radius: 5px;
+  color: #252c41;
+  cursor: pointer;
+}
+
+.bills {
+  margin-top: 25px;
+}
+
+.bills .bills-heading {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.bill-select {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 15px;
+  font-size: 14px;
+  gap: 10px;
+}
+
+.internet,
+.electricity,
+.water {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.features {
+  margin-top: 25px;
+}
+
+.features .features-heading {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.select-features {
+  margin-top: 15px;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.select-features input {
+  margin-right: 5px;
+}
+
+.select-features .cctv-section,
+.select-features .gym-section,
+.select-features .lift-section,
+.select-features .power-section,
+.select-features .parking-section,
+.select-features .cooler-section,
+.select-features .ac-section,
+.select-features .laundry-section,
+.select-features .geyser-section {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine {
+  display: flex;
+  align-items: center;
+}
+
+.search-box-filter {
+  width: 100%;
+  position: relative;
+}
+
+.search-box-filter input {
+  font-family: "poppins", sans-serif;
+}
+
+.search-box-filter input {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border-radius: 25px;
+  border: 1px solid #252c41;
+  font-size: 14px;
+  outline: none;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.search-icon-filter {
+  position: absolute;
+  top: 45%;
+  right: 15px;
+  color: #252c41;
+  transform: translateY(-50%);
+}
+
+.applyBtn {
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  float: right;
+  margin-top: 20px;
+  border-radius: 25px;
+  background-color: royalblue;
+  font-family: "poppins", sans-serif;
+  margin-bottom: 25px;
+  cursor: pointer;
+}

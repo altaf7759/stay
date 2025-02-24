@@ -1,0 +1,416 @@
+.propertiesForm {
+  font-family: "poppins", sans-serif;
+  display: flex;
+  gap: 2%;
+  width: 100%;
+  padding: 0 10%;
+  flex-wrap: wrap;
+}
+
+.formController {
+  flex-basis: 30%;
+  padding: 35px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px lightgray;
+  height: fit-content;
+  margin-top: 150px;
+}
+
+.formControllerPin {
+  position: sticky;
+  top: 120px;
+  left: 10%;
+}
+
+.formController h1 {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.formController ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formController li {
+  list-style: none;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.active-step {
+  background-color: royalblue;
+  color: white;
+  border: 1px solid royalblue;
+}
+
+.propertiesForm form {
+  box-shadow: 0px 0px 5px lightgray;
+  border-radius: 5px;
+  padding: 35px;
+  flex-basis: 68%;
+  height: fit-content;
+  width: 100%;
+  margin-bottom: 100px;
+  margin-top: 150px;
+}
+
+.propertiesForm form h4 {
+  margin-bottom: 20px;
+}
+
+.propertiesForm form .type {
+  display: flex;
+  flex-direction: column;
+}
+
+.propertiesForm form .type select {
+  padding: 8px;
+  font-size: 15px;
+  font-family: "poppins", sans-serif;
+}
+
+.type .selectError,
+.titleError,
+.descriptionError,
+.cityError,
+.areaError,
+.pincodeError,
+.rentError,
+.furnishinStatusError,
+.occupancyTypeError,
+.tenantsError,
+.genderError,
+.smokingError,
+.alcoholError,
+.petsError,
+.ownerError,
+.phoneError,
+.imagesError,
+.videoError {
+  color: red;
+  font-size: 12px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.propertiesForm form .title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.propertiesForm form .title input {
+  padding: 8px;
+  font-size: 15px;
+  width: 100%;
+  font-family: "poppins", sans-serif;
+}
+
+.propertiesForm form .typeTitle {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.propertyDetailInputs {
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+.description textarea {
+  padding: 8px;
+  font-size: 15px;
+  font-family: "poppins", sans-serif;
+  resize: vertical;
+}
+
+.nextBtn,
+.prevBtn,
+.submitBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nextBtn,
+.submitBtn {
+  float: inline-end;
+}
+
+.prevBtn {
+  float: inline-start;
+}
+
+.nextButton {
+  padding: 7px 15px;
+  margin-top: 20px;
+  background-color: royalblue;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: 15px;
+}
+
+.submitButton {
+  padding: 7px 15px;
+  margin-top: 20px;
+  background-color: royalblue;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-size: 15px;
+}
+
+.previewButton {
+  padding: 7px 15px;
+  background-color: royalblue;
+  color: white;
+  margin-top: 20px;
+  border: none;
+  border-radius: 2px;
+  font-size: 15px;
+}
+
+.locationDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.city,
+.area,
+.landmark,
+.pin {
+  display: flex;
+  flex-direction: column;
+}
+
+.city input,
+.area input,
+.landmark input,
+.pin input {
+  padding: 8px;
+  font-size: 15px;
+  font-family: "poppins", sans-serif;
+}
+
+.rentAndBilling {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rent,
+.deposite,
+.addBillInc,
+.maintenance {
+  display: flex;
+  flex-direction: column;
+}
+
+.rent input,
+.deposite input,
+.maintenance input {
+  padding: 8px;
+  font-size: 15px;
+  font-family: "poppins", sans-serif;
+}
+
+.addBillsInc {
+  display: flex;
+  gap: 45px;
+}
+
+.addBillsInc .ebill,
+.addBillsInc .wbill,
+.addBillsInc .ibill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.propertyFeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-wrap: anywhere;
+}
+
+.facilitiesProvided {
+  display: flex;
+  flex-direction: column;
+}
+
+.facilities {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+}
+
+.fStatus,
+.oType {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.fFurnished,
+.sFurnished,
+.uFurnished,
+.single,
+.double,
+.triple {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.parking,
+.cctv,
+.laundry,
+.ac,
+.cooler,
+.geyser,
+.gym,
+.lift,
+.powerBackup {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rulesAndRes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tenants,
+.smokingAllowed,
+.petsAllowed,
+.alcoholAllowed {
+  display: flex;
+  flex-direction: column;
+}
+
+.tenants .tOptions,
+.gOptions,
+.smoking,
+.pets,
+.alcohol {
+  display: flex;
+  gap: 45px;
+}
+
+.tOptions .family,
+.tOptions .student,
+.tOptions .working,
+.tOptions .bachelors,
+.male,
+.female,
+.any,
+.yes,
+.no {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactInfo .owner,
+.contactInfo .phone,
+.contactInfo .email {
+  display: flex;
+  flex-direction: column;
+}
+
+.owner input,
+.phone input,
+.email input {
+  padding: 8px;
+  font-size: 15px;
+  font-family: "poppins", sans-serif;
+}
+
+.imagesAndMedia {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.images,
+.videos {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagesPrev,
+.videoPrev {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  overflow-wrap: anywhere;
+}
+
+.preview-section {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.preview-section h5 {
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.preview-item {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.images-container img,
+.video-container video,
+.videoPrev video,
+.imagesPrev img {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}

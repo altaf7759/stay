@@ -1,0 +1,192 @@
+.home{
+    background-image: url(../../assets/main.jpg);
+    width: 100%;
+    height: 550px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main-heading{
+    font-family: 'Parkinsans', sans-serif;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 0px 0px 3px gray;
+}
+
+.locations{
+    background-image: url(../../assets/pattern.png);
+    padding: 50px 10%;
+}
+
+.city-section h4{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'poppins', sans-serif;
+}
+
+.city-section p{
+    text-align: center;
+    font-family: 'Parkinsans', sans-serif;
+    color: gray;
+    margin-top: 10px;
+}
+
+.cities{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.cities a{
+    text-decoration: none;
+}
+
+.city-box{
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px lightgray;
+}
+
+.city-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.city h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.city p{
+    color: white;
+}
+
+.noida{
+    background-image: linear-gradient(#00000060, #00000060), url(../../assets/kolkata.jpg);
+    height: 330px;
+}
+
+.patna{
+    background-image: linear-gradient(#00000060, #00000060), url(../../assets/patna.jpg);
+    height: 330px;
+}
+
+.varanasi{
+    background-image: linear-gradient(#00000060, #00000060), url(../../assets/varanasi.jpg);
+    height: 330px;
+}
+
+.jaipur{
+    background-image: linear-gradient(#00000060, #00000060), url(../../assets/chennai.jpg);
+    height: 330px;
+}
+
+.more{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.more button{
+    font-size: 16px;
+    font-family: 'poppins', sans-serif;
+    padding: 10px 20px;
+    border: 1.5px solid #0a61ad;
+    border-radius: 5px;
+    color:#0a61ad;
+    background-color: transparent;
+}
+
+.site-datails{
+    background-color: #252c41;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    display: flex;
+    padding: 50px 10%;
+    justify-content: space-between;
+}
+
+.first, .second, .third{
+    text-align: center;
+}
+
+.big{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    word-spacing: 1px;
+}
+
+.small{
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #ffffffa8;
+}
+
+.reviews{
+    background-image: url(../../assets/pattern.png);
+    background-repeat: no-repeat;
+    padding: 100px 10%;
+    font-family: 'poppins', sans-serif;
+}
+
+.reviews h4{
+    font-size: 22px;
+    text-align: center;
+}
+
+.reviews p{
+    font-family: 'Parkinsans', sans-serif;
+    color: gray;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.user-review-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.user-review{
+    padding: 40px 50px;
+    background-color: #ffffffe0;
+    box-shadow: 0px 0px 5px lightgray;
+    border-radius: 5px;
+}
+
+.img-section{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.user-img img{
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.user-detail h5{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.user-detail p{
+    color: gray;
+    font-size: 13px;
+}
+
+.review-text{
+    color: gray;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 25px;
+}
+
+
+

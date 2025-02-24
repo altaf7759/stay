@@ -1,0 +1,75 @@
+footer{
+    padding: 0 10%;
+    background-color: #252c41;
+    color: #ffffffa8;
+    font-size: 15px;
+    font-family: 'poppins', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.sec1{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.sec1 h4{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.sec1 ul li{
+    list-style: none;
+    margin: 12px 0px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.sec1 form{
+    margin-top: 15px;
+}
+
+.sec1 form input{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+}
+
+.sec1 form button{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 10px 15px;
+    background-color: #238de9;
+    color: white;
+}
+
+.follow-slogen{
+    font: 14px;
+    font-weight: 300;
+}
+
+.socials{
+    color: #ffffffa8;
+    display: flex;
+    gap: 10px;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.sec2{
+    border-top: 1px solid #ffffffa8;
+}
+
+.sec2 p{
+    color: #ffffffa8;
+    text-align: center;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    padding: 15px;
+    font-weight: 300;
+}

@@ -1,0 +1,22 @@
+.products-section{
+    padding: 50px 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products-list{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+    padding-left: 30px;
+    margin-top: 70px;
+}
+
+.filter-box{
+    flex-basis: 30%;
+    margin-top: 70px;
+    height: fit-content;
+    position: sticky;
+    top: 50px;
+    left: 10%;
+}

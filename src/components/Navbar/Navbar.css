@@ -1,0 +1,151 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  padding: 0 10%;
+  position: fixed;
+  z-index: 1001;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 0px 3px lightgray;
+}
+
+.nav-show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #252c41;
+  color: #252c41;
+  z-index: 1000;
+  transition: 0.5s;
+  box-shadow: 0px 0px 3px lightgray;
+}
+
+.nav-show-design {
+  color: #252c41;
+}
+
+.logo h1 {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Parkinsans", sans-serif;
+  cursor: pointer;
+  color: #252c41;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo h1:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.logo span {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.nav-tabs {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navs .navigators {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navs .navigators li {
+  list-style: none;
+  font-family: "poppins", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #252c41;
+}
+
+.navs .navigators li:hover {
+  transform: scale(1.05);
+  transition: 0.1s;
+}
+
+.support-icon {
+  font-size: 20px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.list-icon {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.auth .wishlist {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #252c41;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+  position: relative;
+}
+
+.auth .wishlist .wishlistIcon {
+  font-size: 20px;
+}
+
+.auth .wishlist .favoriteCount {
+  position: absolute;
+  top: -5px;
+  left: 20px;
+  color: #252c41;
+  font-size: 12px;
+}
+
+.auth .auth-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "poppins", sans-serif;
+  color: #252c41;
+  border: 1.5px solid #252c41;
+  border-radius: 25px;
+  padding: 8px 20px;
+}
+
+.auth-link:hover {
+  text-decoration: none;
+  background-color: #252c41;
+  color: white;
+  border-color: #252c41;
+  transition: 0.1s;
+}
