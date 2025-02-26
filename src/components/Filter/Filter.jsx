@@ -64,7 +64,9 @@ const Filter = ({ propertyData, setFilteredPropertyData, setPropertyData }) => {
       return;
     }
 
-    fetch(`https://stay-backend.onrender.com/search?query=${searchQuery}`)
+    fetch(
+      `pleasant-comfort-stay-backend.up.railway.app/search?query=${searchQuery}`
+    )
       .then((response) => response.json())
       .then((data) => {
         setFilteredPropertyData(data);

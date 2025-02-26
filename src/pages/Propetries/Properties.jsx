@@ -67,7 +67,7 @@ const Properties = ({ title }) => {
 
   useEffect(() => {
     if (!query) {
-      fetch("https://stay-backend.onrender.com/properties-list")
+      fetch("pleasant-comfort-stay-backend.up.railway.app/properties-list")
         .then((response) => {
           return response.json();
         })
@@ -77,7 +77,9 @@ const Properties = ({ title }) => {
         });
     }
     if (query) {
-      fetch(`https://stay-backend.onrender.com/search?query=${query}`)
+      fetch(
+        `pleasant-comfort-stay-backend.up.railway.app/search?query=${query}`
+      )
         .then((response) => response.json())
         .then((data) => {
           setPropertyData(data);
@@ -121,7 +123,7 @@ const Properties = ({ title }) => {
             </div>
           </div>
           {filteredPropertyData.map((item) => {
-            const fullImageUrl = `https://stay-backend.onrender.com/${item.images[0].replace(
+            const fullImageUrl = `pleasant-comfort-stay-backend.up.railway.app/${item.images[0].replace(
               /\\/g,
               "/"
             )}`;

@@ -57,7 +57,7 @@ function ShowDetails() {
     const fetchPropertyDetails = async () => {
       try {
         const response = await fetch(
-          `https://stay-backend.onrender.com/property/${id}`
+          `pleasant-comfort-stay-backend.up.railway.app/property/${id}`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch property details");
@@ -83,7 +83,7 @@ function ShowDetails() {
       if (isFavorite) {
         // Logic for removing from wishlist (if implemented)
         const response = await fetch(
-          `https://stay-backend.onrender.com/wishlist/remove/${user?.id}/${id}`,
+          `pleasant-comfort-stay-backend.up.railway.app/wishlist/remove/${user?.id}/${id}`,
           {
             method: "DELETE",
           }
@@ -99,7 +99,7 @@ function ShowDetails() {
       } else {
         // Logic for adding to wishlist
         const response = await fetch(
-          `https://stay-backend.onrender.com/wishlist/add/${user?.id}/${id}`,
+          `pleasant-comfort-stay-backend.up.railway.app/wishlist/add/${user?.id}/${id}`,
           {
             method: "POST",
           }
@@ -132,7 +132,7 @@ function ShowDetails() {
 
   const firstImage =
     propertyDetails.images && propertyDetails.images.length > 0
-      ? `https://stay-backend.onrender.com/${propertyDetails.images[0].replace(
+      ? `pleasant-comfort-stay-backend.up.railway.app/${propertyDetails.images[0].replace(
           /\\/g,
           "/"
         )}`
@@ -141,7 +141,7 @@ function ShowDetails() {
   const allImages =
     propertyDetails.images && propertyDetails.images.length > 0 ? (
       propertyDetails.images.map((img, key) => {
-        const fullImageUrl = `https://stay-backend.onrender.com/${img.replace(
+        const fullImageUrl = `pleasant-comfort-stay-backend.up.railway.app/${img.replace(
           /\\/g,
           "/"
         )}`;
@@ -167,7 +167,7 @@ function ShowDetails() {
     propertyDetails.video.length > 0 &&
     typeof propertyDetails.video[0] === "string" ? (
       <video
-        src={`https://stay-backend.onrender.com/${propertyDetails.video[0].replace(
+        src={`pleasant-comfort-stay-backend.up.railway.app/${propertyDetails.video[0].replace(
           /\\/g,
           "/"
         )}`}
@@ -176,7 +176,7 @@ function ShowDetails() {
         }}
         className={
           bigImg ===
-          `https://stay-backend.onrender.com/${propertyDetails.video[0].replace(
+          `pleasant-comfort-stay-backend.up.railway.app/${propertyDetails.video[0].replace(
             /\\/g,
             "/"
           )}`
@@ -199,7 +199,7 @@ function ShowDetails() {
             <div className="fullImg">
               {firstImage ? (
                 bigImg ===
-                `https://stay-backend.onrender.com/${propertyDetails.video[0].replace(
+                `pleasant-comfort-stay-backend.up.railway.app/${propertyDetails.video[0].replace(
                   /\\/g,
                   "/"
                 )}` ? (

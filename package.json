@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "proxy": "https://stay-backend.onrender.com",
+  "proxy": "pleasant-comfort-stay-backend.up.railway.app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

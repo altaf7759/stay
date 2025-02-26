@@ -22,7 +22,7 @@ function App() {
 
       try {
         const response = await fetch(
-          `https://stay-backend.onrender.com/wishlist/${user?.id}`
+          `pleasant-comfort-stay-backend.up.railway.app/wishlist/${user?.id}`
         );
         if (!response.ok) {
           throw new Error(
