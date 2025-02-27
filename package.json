@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "proxy": "pleasant-comfort-stay-backend.up.railway.app",
+  "proxy": "https://pleasant-comfort-stay-backend.up.railway.app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

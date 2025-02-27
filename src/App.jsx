@@ -22,7 +22,7 @@ function App() {
 
       try {
         const response = await fetch(
-          `pleasant-comfort-stay-backend.up.railway.app/wishlist/${user?.id}`
+          `https://pleasant-comfort-stay-backend.up.railway.app/wishlist/${user?.id}`
         );
         if (!response.ok) {
           throw new Error(

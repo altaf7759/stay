@@ -151,7 +151,7 @@ const ListProperties = () => {
 
     try {
       const response = await fetch(
-        "pleasant-comfort-stay-backend.up.railway.app/list-your-properties",
+        "https://pleasant-comfort-stay-backend.up.railway.app/list-your-properties",
         {
           method: "POST",
           body: formData,

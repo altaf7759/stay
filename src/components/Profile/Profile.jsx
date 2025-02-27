@@ -15,7 +15,9 @@ const Profile = () => {
   const wishlist = useSelector((state) => state.wishlist?.wishlistData);
 
   useEffect(() => {
-    fetch(`pleasant-comfort-stay-backend.up.railway.app/profile/${userId}`)
+    fetch(
+      `https://pleasant-comfort-stay-backend.up.railway.app/profile/${userId}`
+    )
       .then((response) => response.json())
       .then((data) => setPropertyData(data.list))
       .catch((error) => {
@@ -73,7 +75,7 @@ const Profile = () => {
           )}
           {activeBtn === 0 &&
             propertyData.map((item) => {
-              const fullImageUrl = `pleasant-comfort-stay-backend.up.railway.app/${item?.images[0]?.replace(
+              const fullImageUrl = `https://pleasant-comfort-stay-backend.up.railway.app/${item?.images[0]?.replace(
                 /\\/g,
                 "/"
               )}`;
@@ -121,7 +123,7 @@ const Profile = () => {
               </p>
               {wishlist
                 ? wishlist.map((item) => {
-                    const fullImageUrl = `pleasant-comfort-stay-backend.up.railway.app/${item.images[0].replace(
+                    const fullImageUrl = `https://pleasant-comfort-stay-backend.up.railway.app/${item.images[0].replace(
                       /\\/,
                       "/"
                     )}`;

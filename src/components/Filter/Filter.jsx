@@ -65,7 +65,7 @@ const Filter = ({ propertyData, setFilteredPropertyData, setPropertyData }) => {
     }
 
     fetch(
-      `pleasant-comfort-stay-backend.up.railway.app/search?query=${searchQuery}`
+      `https://pleasant-comfort-stay-backend.up.railway.app/search?query=${searchQuery}`
     )
       .then((response) => response.json())
       .then((data) => {

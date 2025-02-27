@@ -55,7 +55,7 @@ const PropertiesItem = ({
       if (isFavorite) {
         // Logic for removing from wishlist (if implemented)
         const response = await fetch(
-          `pleasant-comfort-stay-backend.up.railway.app/wishlist/remove/${user?.id}/${id}`,
+          `https://pleasant-comfort-stay-backend.up.railway.app/wishlist/remove/${user?.id}/${id}`,
           {
             method: "DELETE",
           }
@@ -71,7 +71,7 @@ const PropertiesItem = ({
       } else {
         // Logic for adding to wishlist
         const response = await fetch(
-          `pleasant-comfort-stay-backend.up.railway.app/wishlist/add/${user?.id}/${id}`,
+          `https://pleasant-comfort-stay-backend.up.railway.app/wishlist/add/${user?.id}/${id}`,
           {
             method: "POST",
           }

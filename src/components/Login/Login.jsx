@@ -13,7 +13,7 @@ const Login = () => {
   const handleLoginSuccess = (credentialResponse) => {
     const token = credentialResponse.credential;
 
-    fetch("pleasant-comfort-stay-backend.up.railway.app/login", {
+    fetch("https://pleasant-comfort-stay-backend.up.railway.app/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
